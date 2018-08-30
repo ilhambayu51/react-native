@@ -7,23 +7,29 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, Image, AppRegistry} from 'react-native';
 
-const instructions = Platform.select({
+/*const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
-    'Kelas : 11',
-});
+    'Double tap R on your keyboard to reload,\n' +
+    'Shake or press menu button for dev menu',
+	<Text style={styles.instructions}>{instructions}</Text>
+}); */
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Halo Halo</Text>
-        <Text style={styles.instructions}>Nama : Ilham Bayu Wibowo</Text>
-        <Text style={styles.instructions}>No: 16</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Text style={styles.welcome}>Samlekom Mamang</Text>
+        <Text style={styles.welcome}>Nama: Ilham Bayu W</Text>
+		<Text style={styles.welcome}>Kelas:XI RPL IV</Text>
+		<Text style={styles.welcome}>No:16</Text>
+    <Image
+          source={require('./2.png')}
+          style= {{width:250, height:200}}/>
+        
       </View>
     );
   }
@@ -41,9 +47,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
   },
-  instructions: {
+ /* instructions: {
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
-  },
+  },*/
 });
