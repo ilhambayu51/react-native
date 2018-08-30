@@ -8,11 +8,11 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, Image, AppRegistry} from 'react-native';
-
+import Judul from './Components/Judul';
 /*const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
-    'Double tap R on your keyboard to reload,\n' +
+    'Double tap R on your keyboard to reload,\n' +s
     'Shake or press menu button for dev menu',
 	<Text style={styles.instructions}>{instructions}</Text>
 }); */
@@ -22,13 +22,13 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Samlekom Mamang</Text>
-        <Text style={styles.welcome}>Nama: Ilham Bayu W</Text>
-		<Text style={styles.welcome}>Kelas:XI RPL IV</Text>
-		<Text style={styles.welcome}>No:16</Text>
-    <Image
+      <Judul/>
+      <Text style={styles.welcome}>Nama: Ilham Bayu W</Text>
+		  <Text style={styles.welcome}>Kelas:XI RPL 4</Text>
+	    <Text style={styles.welcome}>No:16</Text>
+      <Image
           source={require('./2.png')}
-          style= {{width:250, height:200}}/>
+          style= {{width:300, height:250}}/>
         
       </View>
     );
