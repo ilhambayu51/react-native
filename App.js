@@ -1,4 +1,4 @@
-/**
+/*
  * Sample React Native App
  * https://github.com/facebook/react-native
  *
@@ -22,13 +22,15 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-      <Judul/>
+      <Judul title = "Biodata"/>
+      <Judul title = "Login"/>
+      <Judul title = "Form"/>
       <Text style={styles.welcome}>Nama: Ilham Bayu W</Text>
 		  <Text style={styles.welcome}>Kelas:XI RPL 4</Text>
 	    <Text style={styles.welcome}>No:16</Text>
       <Image
           source={require('./2.png')}
-          style= {{width:300, height:250}}/>
+          style= {{width:260, height:190}}/>
         
       </View>
     );
